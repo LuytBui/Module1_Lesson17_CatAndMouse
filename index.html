@@ -19,15 +19,21 @@
     let mouse1 = new Mouse('Chuột vận động viên', 4, 20);
     showAnimalStatus(mouse1);
     cat1.catch(mouse1);
+    cat1.speak('Huhuhu');
+    mouse1.speak('Hihihi');
     document.write('<br>');
 
     let mouse2 = new Mouse('Chuột lực sỹ', 11, 5);
     showAnimalStatus(mouse2);
+    cat1.speak('Máááá');
+    mouse2.speak('Cútttt');
     cat1.catch(mouse2);
     document.write('<br>');
 
     let mouse3 = new Mouse('Chuột còi', 2, 8);
     showAnimalStatus(mouse3);
+    mouse3.speak('Cíu cíu cíu');
+    cat1.speak('mlem mlem');
     cat1.catch(mouse3);
     showAnimalStatus(mouse3);
     showAnimalStatus(cat1);
