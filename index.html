@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script/aminal.js"></script>
+    <script src="script/cat.js"></script>
+    <script src="script/mouse.js"></script>
+    <script src="script/interactive.js"></script>
+
+</head>
+<body>
+<script>
+    let cat1 = new Cat('Mèo đen', 10, 10);
+    showAnimalStatus(cat1);
+    document.write('<br>');
+
+
+    let mouse1 = new Mouse('Chuột vận động viên', 4, 20);
+    showAnimalStatus(mouse1);
+    cat1.catch(mouse1);
+    document.write('<br>');
+
+    let mouse2 = new Mouse('Chuột lực sỹ', 11, 5);
+    showAnimalStatus(mouse2);
+    cat1.catch(mouse2);
+    document.write('<br>');
+
+    let mouse3 = new Mouse('Chuột còi', 2, 8);
+    showAnimalStatus(mouse3);
+    cat1.catch(mouse3);
+    showAnimalStatus(mouse3);
+    showAnimalStatus(cat1);
+    document.write('<br>');
+
+    let mouse4 = new Mouse('Chuột qua đời', 3, 5);
+    mouse4.setDeath();
+    showAnimalStatus(mouse4);
+    cat1.catch(mouse4);
+    showAnimalStatus(cat1);
+    document.write('<br>');
+
+
+</script>
+</body>
+</html>
